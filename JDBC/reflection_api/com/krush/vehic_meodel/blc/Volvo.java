@@ -1,4 +1,4 @@
-package com.krush.vehical_model.blc;
+package com.krush.vehic_meodel.blc;
 
 public class Volvo  extends Bus{
 

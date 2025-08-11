@@ -1,4 +1,4 @@
-package com.krush.vehical_model.blc;
+package com.krush.vehic_meodel.blc;
 
 public abstract class Bus implements Vehicle {
 
