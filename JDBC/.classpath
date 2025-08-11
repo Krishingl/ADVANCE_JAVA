@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="reflection_api"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
