@@ -5,8 +5,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.ListIterator;
+import java.util.Map;
 import java.util.Scanner;
 
 public class EmployeeDataOperation_CreateTableAndInsertValues {
@@ -19,7 +20,7 @@ public class EmployeeDataOperation_CreateTableAndInsertValues {
 		  
 		   Statement stmt = con.createStatement();
 		   //  stmt.execute("drop table employee");
-		     try {
+		     try(con;stmt) {
 		    	 stmt.execute("""
 		      		     CREATE TABLE employee( 
 		      		     emp_id  NUMBER(8) PRIMARY KEY,
@@ -119,7 +120,9 @@ public class EmployeeDataOperation_CreateTableAndInsertValues {
 		    	        }
 		    	 
 		     }
+		     
 		  
+	
 	}
 	 private static void insertRecord(ArrayList<Employee> listOFEmployee,Statement stmt) 
 	 {
@@ -139,7 +142,7 @@ public class EmployeeDataOperation_CreateTableAndInsertValues {
 					System.err.println("insertRecord");
 					
 				}
-		 
+		
     	 
      }
      
