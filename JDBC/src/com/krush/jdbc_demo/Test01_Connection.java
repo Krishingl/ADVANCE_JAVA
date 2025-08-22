@@ -1,6 +1,5 @@
 package com.krush.jdbc_demo;
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class Test01_Connection{
