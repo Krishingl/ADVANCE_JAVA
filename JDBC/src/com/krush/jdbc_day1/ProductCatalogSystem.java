@@ -9,7 +9,7 @@ public class ProductCatalogSystem {
 	{
 		  Class.forName("oracle.jdbc.driver.OracleDriver");
 		  System.out.println("Class Loaded Succesfully");
-		  Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", "KIDB", "123");
+		  Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","KIDB", "123");
 		  System.out.println("Connection created.");
 		  
 		  Statement stmt = con.createStatement();
